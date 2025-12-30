@@ -2,11 +2,11 @@
 
 > A virtual pet that lives in your terminal - earns rewards when you make Git commits!
 
-**Version:** 1.0.1 | **Node.js:** >=14.0.0 | **TypeScript:** 5.3.3
-
 [![npm version](https://badge.fury.io/js/pet-terminal.svg)](https://www.npmjs.com/package/pet-terminal)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/lessen-xu/pet-terminal?style=social)](https://github.com/lessen-xu/pet-terminal)
+[![Node](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3.3-blue)](https://www.typescriptlang.org)
 
 ---
 
