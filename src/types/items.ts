@@ -95,17 +95,6 @@ export const ITEMS: Record<string, ItemDefinition> = {
     xpReward: 25,
     price: 50,
   },
-  dragon_gem: {
-    id: 'dragon_gem',
-    name: 'Magic Gem',
-    type: ItemType.FOOD,
-    rarity: ItemRarity.LEGENDARY,
-    description: 'A magical gem that dragons love to eat!',
-    emoji: '💎',
-    effect: { hunger: 50, happiness: 20, health: 10, energy: 10 },
-    xpReward: 50,
-    price: 100,
-  },
 
   // ===== TOYS =====
   ball: {

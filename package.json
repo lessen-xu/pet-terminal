@@ -1,8 +1,10 @@
 {
   "name": "pet-terminal",
-  "version": "1.0.1",
-  "description": "A virtual pet that lives in your terminal - earns rewards when you make Git commits!",
-  "main": "dist/index.js",
+  "displayName": "Pet Terminal",
+  "version": "1.0.2",
+  "description": "A virtual pet that lives in your terminal and VS Code. Grows as you code!",
+  "publisher": "lessen-xu",
+  "main": "./dist/extension.js",
   "bin": {
     "pet": "./dist/index.js"
   },
@@ -48,11 +50,6 @@
     "url": "https://github.com/lessen-xu/pet-terminal/issues"
   },
   "homepage": "https://github.com/lessen-xu/pet-terminal",
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^11.1.0",
@@ -62,6 +59,7 @@
   "devDependencies": {
     "@types/inquirer": "^8.2.10",
     "@types/node": "^20.10.6",
+    "@types/vscode": "^1.107.0",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
     "@typescript-eslint/parser": "^6.17.0",
     "@vitest/coverage-v8": "^1.0.0",
@@ -72,6 +70,48 @@
     "vitest": "^1.0.0"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+    "vscode": "^1.107.0"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "petTerminal.showStatus",
+        "title": "Pet Terminal: Show Status"
+      },
+      {
+        "command": "petTerminal.feed",
+        "title": "Pet: Feed"
+      },
+      {
+        "command": "petTerminal.play",
+        "title": "Pet: Play"
+      },
+      {
+        "command": "petTerminal.release",
+        "title": "Pet: Release / Say Goodbye"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "pet-terminal-location",
+          "title": "Pet Terminal",
+          "icon": "resources/pet-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "pet-terminal-location": [
+        {
+          "id": "pet-terminal.dashboard",
+          "name": "My Pet",
+          "type": "webview"
+        }
+      ]
+    }
   }
 }

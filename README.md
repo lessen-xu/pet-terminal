@@ -1,6 +1,6 @@
 # Pet Terminal
 
-> A virtual pet that lives in your terminal - earns rewards when you make Git commits!
+> A virtual pet for your terminal AND VS Code status bar - earns rewards when you make Git commits!
 
 [![npm version](https://badge.fury.io/js/pet-terminal.svg)](https://www.npmjs.com/package/pet-terminal)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -24,7 +24,8 @@ If this project helps you, please give it a  &nbsp; [![GitHub stars](https://img
 
 ##  Features
 
--  **Choose your pet**: Cat, Dog, Rabbit, Hamster, Bird, or Dragon with unique ASCII art
+### CLI & VS Code Hybrid
+-  **Choose your pet**: Cat or Dog with unique ASCII art
 -  **Git integration**: Earn coins and XP automatically when you make commits
 -  **Smart rewards**: Bug fixes earn more than features - gamified motivation!
 -  **Shop system**: Buy food, toys, medicine, and cleaning supplies
@@ -33,7 +34,16 @@ If this project helps you, please give it a  &nbsp; [![GitHub stars](https://img
 -  **Lenient decay**: Stats decay slowly - your pet stays healthy for days!
 -  **Streak bonuses**: Maintain daily commit streaks for extra rewards
 
+### 🧩 VS Code Extension
+-  **Status Bar Monitor**: See your pet's name, emoji, health, and level in the bottom-right corner
+-  **Side Panel Dashboard**: Tamagotchi-style visual interface with retro ASCII art
+-  **Native Git Integration**: Automatically rewards XP and Coins when you commit code using VS Code's Source Control
+-  **Interactive Commands**: Feed, play, and release your pet via the Command Palette
+-  **Real-time Updates**: Status bar refreshes every 3 seconds
+
 ##  Installation
+
+### CLI (Terminal)
 
 ```bash
 npm install -g pet-terminal
@@ -44,6 +54,17 @@ Or use with npx without installing:
 ```bash
 npx pet-terminal init
 ```
+
+### VS Code Extension
+
+**Option 1: Install from .vsix**
+1. Download the latest `.vsix` from [Releases](https://github.com/lessen-xu/pet-terminal/releases)
+2. In VS Code, go to **Extensions** → **...** → **Install from VSIX**
+3. Reload VS Code
+
+**Option 2: Build and Run (Development)**
+1. Clone the repo and run `npm install`
+2. Press `F5` in VS Code to launch the Extension Development Host
 
 ##  Quick Start
 
@@ -80,6 +101,7 @@ pet --help
 | `pet shop` | `store` | Visit the pet shop |
 | `pet git` | `commits` | Check for new Git commits & earn rewards |
 | `pet sync` | - | Sync time after being away |
+| `pet release` | - | Say goodbye to your pet forever |
 | `pet tutorial` | `help`, `guide` | Show the interactive tutorial |
 
 ##  Philosophy
@@ -210,10 +232,6 @@ Optional config file at `~/.pet-terminal/config.json`:
 |---------|-------------|---------------|
 | 🐱 Cat | Independent and graceful | Higher happiness cap |
 | 🐕 Dog | Loyal and energetic | Faster energy recovery |
-| 🐰 Rabbit | Gentle and affectionate | Extra XP from care |
-| 🐹 Hamster | Small and active | Bonus coins from play |
-| 🐦 Bird | Cheerful and smart | Stat bonuses from commits |
-| 🐉 Dragon | Rare and powerful | All stats boosted |
 
 ##  Tips & Tricks
 
@@ -238,6 +256,24 @@ Please check [CHANGELOG.md](CHANGELOG.md) for version history and [CODE_OF_CONDU
 ##  License
 
 MIT License - see [LICENSE](LICENSE) file for details
+
+##  🧩 VS Code Extension
+
+Pet Terminal is a hybrid CLI + VS Code extension. Use either interface or both!
+
+### Available Commands
+
+Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and search for:
+- `Pet: Feed` - Feed your pet from inventory
+- `Pet: Play` - Play with your pet
+- `Pet: Release / Say Goodbye` - Delete your pet permanently
+
+### Usage
+
+1. Create a pet using the CLI: `pet init`
+2. Open any folder in VS Code
+3. Your pet appears in the status bar (bottom-right) and Activity Bar (side panel)
+4. Make Git commits and watch the rewards flow in!
 
 ##  Credits
 

@@ -1,0 +1,17 @@
+# VS Code ignore file - excludes files from extension package
+.vscode/**
+.github/**
+src/**
+**/*.map
+**/*.ts
+tsconfig.json
+vitest.config.ts
+.eslintrc.json
+.prettierrc
+.gitignore
+*.log
+node_modules/**
+CHANGELOG.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+# Keep dist (compiled JS), README, LICENSE, and package.json

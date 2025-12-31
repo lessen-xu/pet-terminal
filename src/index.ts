@@ -15,6 +15,7 @@ import { shopCommand } from './commands/shop';
 import { gitCommand } from './commands/git';
 import { careCommand } from './commands/care';
 import { tutorialCommand } from './commands/tutorial';
+import { releaseCommand } from './commands/release';
 import { WelcomeSystem } from './core/welcome';
 import { showDetailedHelp } from './ui/help';
 
@@ -51,6 +52,7 @@ program.addCommand(inventoryCommand);
 program.addCommand(shopCommand);
 program.addCommand(gitCommand);
 program.addCommand(careCommand);
+program.addCommand(releaseCommand);
 program.addCommand(tutorialCommand);
 
 // Handle bare "pet" command - show welcome
