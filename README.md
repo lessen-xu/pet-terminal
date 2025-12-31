@@ -243,15 +243,26 @@ Optional config file at `~/.pet-terminal/config.json`:
 
 ##  Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions of all kinds are welcome! Whether you're a seasoned developer or just getting started, there are many ways to help make Pet Terminal better:
 
+**Ways to contribute:**
+- 🐛 Fix bugs and issues
+- 🎨 Design new pets or improve ASCII art
+- ✨ Add new features (new items, mini-games, stat systems, etc.)
+- 📝 Improve documentation
+- 🌍 Add translations/Internationalization support
+- 💡 Share ideas and suggestions
+
+**Getting Started:**
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-Please check [CHANGELOG.md](CHANGELOG.md) for version history and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community guidelines.
+Please check [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines, [CHANGELOG.md](CHANGELOG.md) for version history, and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community guidelines.
+
+Thank you for considering contributing! Every contribution helps make Pet Terminal more enjoyable for everyone. 🐾
 
 ##  License
 
